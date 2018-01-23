@@ -15,6 +15,7 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.AutoField(verbose_name='ID', primary_key=True, serialize=False, auto_created=True)),
                 ('task', models.CharField(max_length=1000)),
+                ('is_delete', models.BooleanField(default=False)),
             ],
         ),
     ]
