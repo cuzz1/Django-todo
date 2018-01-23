@@ -3,6 +3,8 @@ from django.shortcuts import render
 # from django.template import RequestContext, loader
 from .models import Todo
 # from django.template.context_processors import csrf
+from django.http import HttpResponseRedirect
+
 
 # Create your views here.
 
@@ -27,12 +29,14 @@ from .models import Todo
 def index(request):
     # 获取task
     if request.method == "POST":
-        print("post", request.POST)
+        # print("post", request.POST)
         task = request.POST["task"]
-        # 保存task
-        print("task", task)
+        # new一个task
+        # print("task", task)
         m = Todo.todo.new(task)
-        print("m", m)
+        # 保存task
+        m.save()
+        # print("m", m)
     # 重写了管理类就没有objects属性
     # todo_list = Todo.objects.all()
     todo_list = Todo.todo.filter(is_delete=False)
@@ -44,6 +48,13 @@ def index(request):
     # context.update(csrf(request))
     # 和jinja2渲染方式类似
     return render(request, "todo/index.html", context)
+
+def delete(request, id):
+    m = Todo.todo.get(id=id)
+    print("m.task", m.task)
+    m.is_delete = True
+    m.save()
+    return HttpResponseRedirect("/")
 
 
 

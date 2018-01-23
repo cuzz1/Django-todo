@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
+<style>
+    .button-delete {
+        text-decoration: none;
+    }
+</style>
 <body>
 <ul>
     <br>
@@ -13,7 +18,11 @@
         <button>添加todo</button>
     </form>
     {% for todo in todo_list %}
-        <li>{{ todo.task }}</li>
+        <li>
+            <button ><a class="button-delete" href="delete/{{ todo.id }}">删除</a></button>
+            {{ todo.task }}
+
+        </li>
     {% endfor %}
 </ul>
 
