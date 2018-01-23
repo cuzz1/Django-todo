@@ -28,11 +28,12 @@ from django.http import HttpResponseRedirect
 
 def index(request):
     # 获取task
+    print("*****")
     if request.method == "POST":
         # print("post", request.POST)
         task = request.POST["task"]
         # new一个task
-        # print("task", task)
+        print("task", task)
         m = Todo.todo.new(task)
         # 保存task
         m.save()
