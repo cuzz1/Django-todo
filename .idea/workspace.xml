@@ -56,16 +56,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tests.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/tests.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/todo/urls.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -154,9 +144,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="26" />
-    <option name="y" value="125" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="145" />
+    <option name="y" value="45" />
     <option name="width" value="1302" />
     <option name="height" value="776" />
   </component>
@@ -270,7 +260,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="26" y="125" width="1302" height="776" extended-state="0" />
+    <frame x="145" y="45" width="1302" height="776" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30762988" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -490,6 +480,11 @@
             <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/2.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
