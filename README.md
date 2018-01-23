@@ -1,8 +1,8 @@
 # Django-todo
 
-## 添加todo功能
+## 1.添加todo功能
     点击添加按钮,生成一个新todo
 ![a](https://github.com/cuzz1/Django-todo/raw/master/images/1.png)
-## 删除todo功能
+## 2.删除todo功能
     点击删除,删除一个todo,采用的是物理删除
 ![a](https://github.com/cuzz1/Django-todo/raw/master/images/2.png)
